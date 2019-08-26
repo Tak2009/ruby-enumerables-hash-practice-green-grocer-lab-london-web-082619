@@ -32,6 +32,7 @@ def consolidate_cart(cart)
 end
 =end
 
+=begin
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     if cart.keys.include?(coupon[:item]) && cart[coupon[:item][:count] >= coupon[:num]
@@ -49,11 +50,9 @@ def apply_coupons(cart, coupons)
   end
  end
 end
+=end
 
 
-
-
-=begin
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     if cart.keys.include?(coupon[:item])
@@ -74,7 +73,6 @@ def apply_coupons(cart, coupons)
   end
   cart
 end
-=end
 
 def apply_clearance(cart)
   cart.keys.each do |item|
